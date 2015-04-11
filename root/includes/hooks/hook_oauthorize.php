@@ -13,7 +13,7 @@ class OauthLogin
 {
   // Loading on each page
   
-  function before_template_display(&$hook, $handle, $include_once = true)
+  public static function before_template_display(&$hook, $handle, $include_once = true)
 	{
      global $template, $user, $phpbb_root_path, $phpEx, $config, $mode;
      if($mode == 'logout')
